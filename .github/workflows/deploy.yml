@@ -1,0 +1,13 @@
+name: Deployment to EBS
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout/v4
+      - name: login to docker hub
+        run: echo "login to docker hub"
