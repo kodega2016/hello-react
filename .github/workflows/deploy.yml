@@ -12,7 +12,7 @@ jobs:
       - name: login to docker hub
         run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
       - name: build docker image for the react app
-        run: docker image build -t kodega2016/react-app-dev -f Dockerfile.dev
+        run: docker image build . -t kodega2016/react-app-dev -f Dockerfile.dev
 
       - name: run the unit test on the container
         run: docker container run -e CI=true kodega2016/react-app-dev npm test
