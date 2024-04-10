@@ -12,3 +12,5 @@ docker container run -d --name webapp -p 80:3000 -v $(pwd):/app -v /app/node_mod
 
 Here, we are mounting the current directory to the /app directory in the container.
 This will allow us to make changes to the code on our local machine and see the changes reflected in the container.
+
+Here, we are going to use github actions to build docker image and run the unit testing using docker container.
