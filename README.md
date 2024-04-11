@@ -32,3 +32,5 @@ b) Create a Elastic Beanstalk Application and Environment
 - Create and use new service role and instance profile created in step a
 
 c) Goto S3 and get the bucket name of the Elastic Beanstalk Application
+
+Notes: instance type should be at least t2.small otherwise it will not work.
